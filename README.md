@@ -1,0 +1,1 @@
+# long-covid-garmin-watch-app
