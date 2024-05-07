@@ -1,0 +1,460 @@
+[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 3; ]
+import Toybox.ActivityMonitor;
+[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 4; ]
+import Toybox.Timer;
+[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 5; ]
+import Toybox.Lang;
+[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 6; ]
+import Toybox.System;
+[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 7; ]
+import Toybox.Communications;
+[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 9; ]
+class projView extends WatchUi.View{
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 9; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 9; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 11; @position = 8; ]
+    var label;
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 12; @position = 8; ]
+    var stepsLabel;
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 13; @position = 8; ]
+    var heartRate = 0;
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 14; @position = 8; ]
+    var steps = 0;
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 15; @position = 8; ]
+    var respirationRate = 0;
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 16; @position = 8; ]
+    var activeMinutesDay = 0;
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 17; @position = 8; ]
+    var calories = 0;
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 18; @position = 8; ]
+    var respiration = 0;
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 19; @position = 8; ]
+    var updateTimer = null;
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 21; @position = 8; ]
+    var _heartRateLabel;
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 22; @position = 8; ]
+    var _stepsLabel;
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 23; @position = 8; ]
+    var _activeLabel;
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 24; @position = 8; ]
+    var _caloriesLabel;
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 25; @position = 8; ]
+    var _respirationLabel;
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 27; ]
+    function initialize() as Void {
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_27_26_start:
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 29 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_27_26_stop:
+    }
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 32; ]
+    function onLayout(dc as Dc) as Void {
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_32_40_start:
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 33 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Layouts;
+        %tmp.6 = getv function %tmp.5 :MainLayout;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.9);
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 34 8 ]
+        %tmp.10 = self;
+        %tmp.11 = getv function %tmp.10 :findDrawableById;
+        %tmp.12 = "heartRateLabel";
+        %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
+        putv self :_heartRateLabel %tmp.13;
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 35 8 ]
+        %tmp.14 = self;
+        %tmp.15 = getv function %tmp.14 :findDrawableById;
+        %tmp.16 = "stepsLabel";
+        %tmp.17 = invoke %tmp.14 %tmp.15(%tmp.16);
+        putv self :_stepsLabel %tmp.17;
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 36 8 ]
+        %tmp.18 = self;
+        %tmp.19 = getv function %tmp.18 :findDrawableById;
+        %tmp.20 = "activeLabel";
+        %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
+        putv self :_activeLabel %tmp.21;
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 37 8 ]
+        %tmp.22 = self;
+        %tmp.23 = getv function %tmp.22 :findDrawableById;
+        %tmp.24 = "caloriesLabel";
+        %tmp.25 = invoke %tmp.22 %tmp.23(%tmp.24);
+        putv self :_caloriesLabel %tmp.25;
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 38 8 ]
+        %tmp.26 = self;
+        %tmp.27 = getv function %tmp.26 :findDrawableById;
+        %tmp.28 = "respirationLabel";
+        %tmp.29 = invoke %tmp.26 %tmp.27(%tmp.28);
+        putv self :_respirationLabel %tmp.29;
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_32_40_stop:
+    }
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 41; ]
+    function onShow() as Void {
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_41_30_start:
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 42 7 ]
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_42_7_if_stmt:
+        %tmp.2 = getv ? :updateTimer;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_42_7_if_end;
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_42_7_if_true:
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_42_31_start:
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 43 12 ]
+        [ "C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_42_31_start" "C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_42_31_stop" ]
+        %myTimer.1 = local;
+        %tmp.7 = getm $.Toybox.Timer;
+        %tmp.8 = getv function ? %tmp.7 :Timer;
+        %tmp.5 = newc %tmp.8 ();
+        lputv %myTimer.1 %tmp.5;
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 44 12 ]
+        %tmp.9 = lgetv %myTimer.1;
+        %tmp.10 = getv function %tmp.9 :start;
+        %tmp.11 = self;
+        %tmp.12 = getv function %tmp.11 :method;
+        %tmp.14 = const :fetchHeartRateData;
+        %tmp.15 = invoke %tmp.11 %tmp.12(%tmp.14);
+        %tmp.16 = 500;
+        %tmp.17 = true;
+        invoke %tmp.9 %tmp.10(%tmp.15, %tmp.16, %tmp.17);
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_42_31_stop:
+        goto @C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_42_7_if_end;
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_42_7_if_end:
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_41_30_stop:
+    }
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 48; ]
+    function onUpdate(dc as Dc) as Void {
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_48_40_start:
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 49 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :onUpdate;
+        %tmp.5 = lgetv %dc;
+        invoke %tmp.2 %tmp.3(%tmp.5);
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_48_40_stop:
+    }
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 52; ]
+    function onHide() as Void {
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_52_30_start:
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 53 8 ]
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_53_8_if_stmt:
+        %tmp.2 = getv ? :updateTimer;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_53_8_if_end;
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_53_8_if_true:
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_53_33_start:
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 54 12 ]
+        %tmp.6 = getv ? :updateTimer;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        %tmp.8 = getv function %tmp.7 :stop;
+        invoke %tmp.7 %tmp.8();
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 55 12 ]
+        %tmp.9 = null;
+        putv self :updateTimer %tmp.9;
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_53_33_stop:
+        goto @C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_53_8_if_end;
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_53_8_if_end:
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_52_30_stop:
+    }
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 59; ]
+    function fetchHeartRateData() as Void {
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_59_42_start:
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 60 8 ]
+        [ "C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_59_42_start" "C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_59_42_stop" ]
+        %hrIterator.1 = local;
+        %tmp.1 = getm $.Toybox.ActivityMonitor;
+        %tmp.2 = getv function %tmp.1 :getHeartRateHistory;
+        %tmp.3 = null;
+        %tmp.4 = false;
+        %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4);
+        lputv %hrIterator.1 %tmp.5;
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 61 8 ]
+        [ "C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_59_42_start" "C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_59_42_stop" ]
+        %previous.2 = local;
+        %tmp.6 = lgetv %hrIterator.1;
+        %tmp.7 = getv function %tmp.6 :next;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        lputv %previous.2 %tmp.8;
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 62 8 ]
+        [ "C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_59_42_start" "C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_59_42_stop" ]
+        %lastSampleTime.3 = local;
+        %tmp.9 = null;
+        lputv %lastSampleTime.3 %tmp.9;
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 63 8 ]
+        [ "C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_59_42_start" "C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_59_42_stop" ]
+        %sample.4 = local;
+        %tmp.10 = lgetv %hrIterator.1;
+        %tmp.11 = getv function %tmp.10 :next;
+        %tmp.12 = invoke %tmp.10 %tmp.11();
+        lputv %sample.4 %tmp.12;
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 65 8 ]
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_65_8_if_stmt:
+        %tmp.13 = null;
+        %tmp.15 = lgetv %sample.4;
+        %tmp.16 = ne %tmp.13 %tmp.15;
+        bf %tmp.16 @C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_65_8_if_end;
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_65_8_if_true:
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_65_28_start:
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 66 12 ]
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_66_12_if_stmt:
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_66_16_begin:
+        %tmp.17 = lgetv %sample.4;
+        %tmp.18 = as %tmp.17 { (!Null) };
+        %tmp.19 = getv %tmp.18 :heartRate;
+        %tmp.20 = getm $.Toybox.ActivityMonitor;
+        %tmp.21 = getv %tmp.20 :INVALID_HR_SAMPLE;
+        %tmp.22 = ne %tmp.19 %tmp.21;
+        %tmp.23 = dup %tmp.22;
+        bf %tmp.23 @C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_67_19_end;
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_67_19_true:
+        %tmp.24 = lgetv %previous.2;
+        %tmp.25 = getv %tmp.24 :heartRate;
+        %tmp.26 = getm $.Toybox.ActivityMonitor;
+        %tmp.27 = getv %tmp.26 :INVALID_HR_SAMPLE;
+        %tmp.28 = ne %tmp.25 %tmp.27;
+        %tmp.29 = and %tmp.22 %tmp.28;
+        push %tmp.29;
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_67_19_end:
+        %tmp.30 = phi [%tmp.23 @C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_66_16_begin] [%tmp.29 @C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_67_19_true] [%tmp.30 @C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_67_19_end];
+        bf %tmp.30 @C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_66_12_if_end;
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_66_12_if_true:
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_68_54_start:
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 69 20 ]
+        %tmp.31 = lgetv %sample.4;
+        %tmp.32 = as %tmp.31 { (!Null) };
+        %tmp.33 = getv %tmp.32 :when;
+        lputv %lastSampleTime.3 %tmp.33;
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 70 20 ]
+        %tmp.34 = lgetv %previous.2;
+        %tmp.35 = getv %tmp.34 :heartRate;
+        putv self :heartRate %tmp.35;
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 71 20 ]
+        %tmp.36 = getm $.Toybox.System;
+        %tmp.37 = getv function %tmp.36 :println;
+        %tmp.38 = "Previous: ";
+        %tmp.39 = lgetv %previous.2;
+        %tmp.40 = getv %tmp.39 :heartRate;
+        %tmp.41 = add %tmp.38 %tmp.40;
+        invoke %tmp.36 %tmp.37(%tmp.41);
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 72 20 ]
+        %tmp.42 = getm $.Toybox.System;
+        %tmp.43 = getv function %tmp.42 :println;
+        %tmp.44 = "Sample: ";
+        %tmp.45 = lgetv %sample.4;
+        %tmp.46 = as %tmp.45 { (!Null) };
+        %tmp.47 = getv %tmp.46 :heartRate;
+        %tmp.48 = add %tmp.44 %tmp.47;
+        invoke %tmp.42 %tmp.43(%tmp.48);
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 73 20 ]
+        %tmp.49 = getm $.Toybox.System;
+        %tmp.50 = getv function %tmp.49 :println;
+        %tmp.51 = "LAST SAMPLE:";
+        %tmp.53 = lgetv %lastSampleTime.3;
+        %tmp.54 = add %tmp.51 %tmp.53;
+        invoke %tmp.49 %tmp.50(%tmp.54);
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_68_54_stop:
+        goto @C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_66_12_if_end;
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_66_12_if_end:
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_65_28_stop:
+        goto @C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_65_8_if_end;
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_65_8_if_end:
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 76 8 ]
+        [ "C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_59_42_start" "C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_59_42_stop" ]
+        %info.5 = local;
+        %tmp.55 = getm $.Toybox.ActivityMonitor;
+        %tmp.56 = getv function %tmp.55 :getInfo;
+        %tmp.57 = invoke %tmp.55 %tmp.56();
+        lputv %info.5 %tmp.57;
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 77 8 ]
+        %tmp.58 = lgetv %info.5;
+        %tmp.59 = getv %tmp.58 :steps;
+        putv self :steps %tmp.59;
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 78 8 ]
+        %tmp.60 = lgetv %info.5;
+        %tmp.61 = getv %tmp.60 :respirationRate;
+        putv self :respirationRate %tmp.61;
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 79 8 ]
+        %tmp.62 = lgetv %info.5;
+        %tmp.63 = getv %tmp.62 :calories;
+        putv self :calories %tmp.63;
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 80 8 ]
+        %tmp.64 = lgetv %info.5;
+        %tmp.65 = getv %tmp.64 :respirationRate;
+        putv self :respiration %tmp.65;
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 82 8 ]
+        %tmp.66 = self;
+        %tmp.67 = getv function %tmp.66 :updateHeartRateValue;
+        %tmp.69 = getv ? :heartRate;
+        invoke %tmp.66 %tmp.67(%tmp.69);
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 83 8 ]
+        %tmp.70 = self;
+        %tmp.71 = getv function %tmp.70 :updateStepsValue;
+        %tmp.73 = getv ? :steps;
+        invoke %tmp.70 %tmp.71(%tmp.73);
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 84 8 ]
+        %tmp.74 = self;
+        %tmp.75 = getv function %tmp.74 :updateCaloriesMinutesValue;
+        %tmp.77 = getv ? :calories;
+        invoke %tmp.74 %tmp.75(%tmp.77);
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 85 8 ]
+        %tmp.78 = self;
+        %tmp.79 = getv function %tmp.78 :updateRespirationMinutesValue;
+        %tmp.81 = getv ? :respiration;
+        invoke %tmp.78 %tmp.79(%tmp.81);
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 86 8 ]
+        [ "C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_59_42_start" "C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_59_42_stop" ]
+        %dataToSend.6 = local;
+        %tmp.82 = newd 2;
+        %tmp.83 = "heartRate";
+        %tmp.85 = getv ? :heartRate;
+        %tmp.86 = dup %tmp.82;
+        %tmp.87 = aputv %tmp.86 %tmp.83 %tmp.85;
+        %tmp.88 = "calories";
+        %tmp.90 = getv ? :calories;
+        %tmp.91 = dup %tmp.87;
+        %tmp.92 = aputv %tmp.91 %tmp.88 %tmp.90;
+        lputv %dataToSend.6 %tmp.92;
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 91 8 ]
+        [ "C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_59_42_start" "C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_59_42_stop" ]
+        %listener.7 = local;
+        %tmp.96 = getv ? :CommListener;
+        %tmp.93 = newc %tmp.96 ();
+        lputv %listener.7 %tmp.93;
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 92 8 ]
+        %tmp.97 = getm $.Toybox.Communications;
+        %tmp.98 = getv function %tmp.97 :transmit;
+        %tmp.100 = lgetv %dataToSend.6;
+        %tmp.101 = null;
+        %tmp.103 = lgetv %listener.7;
+        invoke %tmp.97 %tmp.98(%tmp.100, %tmp.101, %tmp.103);
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_59_42_stop:
+    }
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 95; ]
+    function updateHeartRateValue(heartRate as Number) as Void {
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_95_63_start:
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 96 9 ]
+        %tmp.2 = getv ? :_heartRateLabel;
+        %tmp.3 = getv function %tmp.2 :setText;
+        %tmp.4 = "Heart rate:";
+        %tmp.5 = lgetv %heartRate;
+        %tmp.6 = getv function %tmp.5 :toString;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        %tmp.8 = add %tmp.4 %tmp.7;
+        invoke %tmp.2 %tmp.3(%tmp.8);
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 97 9 ]
+        %tmp.9 = getm $.Toybox.WatchUi;
+        %tmp.10 = getv function %tmp.9 :requestUpdate;
+        invoke %tmp.9 %tmp.10();
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_95_63_stop:
+    }
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 100; ]
+    function updateStepsValue(steps as Number) as Void {
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_100_55_start:
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 101 8 ]
+        %tmp.2 = getv ? :_stepsLabel;
+        %tmp.3 = getv function %tmp.2 :setText;
+        %tmp.4 = "Steps:";
+        %tmp.5 = lgetv %steps;
+        %tmp.6 = getv function %tmp.5 :toString;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        %tmp.8 = add %tmp.4 %tmp.7;
+        invoke %tmp.2 %tmp.3(%tmp.8);
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 103 8 ]
+        %tmp.9 = getm $.Toybox.WatchUi;
+        %tmp.10 = getv function %tmp.9 :requestUpdate;
+        invoke %tmp.9 %tmp.10();
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_100_55_stop:
+    }
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 106; ]
+    function updateCaloriesMinutesValue(calories as Number) as Void {
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_106_68_start:
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 107 8 ]
+        %tmp.2 = getv ? :_caloriesLabel;
+        %tmp.3 = getv function %tmp.2 :setText;
+        %tmp.4 = "Calories burned:";
+        %tmp.5 = lgetv %calories;
+        %tmp.6 = getv function %tmp.5 :toString;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        %tmp.8 = add %tmp.4 %tmp.7;
+        invoke %tmp.2 %tmp.3(%tmp.8);
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 108 8 ]
+        %tmp.9 = getm $.Toybox.WatchUi;
+        %tmp.10 = getv function %tmp.9 :requestUpdate;
+        invoke %tmp.9 %tmp.10();
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_106_68_stop:
+    }
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 111; ]
+    function updateRespirationMinutesValue(respiration as Number) as Void {
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_111_74_start:
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 112 8 ]
+        %tmp.2 = getv ? :_respirationLabel;
+        %tmp.3 = getv function %tmp.2 :setText;
+        %tmp.4 = "Respiration rates:";
+        %tmp.5 = lgetv %respiration;
+        %tmp.6 = getv function %tmp.5 :toString;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        %tmp.8 = add %tmp.4 %tmp.7;
+        invoke %tmp.2 %tmp.3(%tmp.8);
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 113 8 ]
+        %tmp.9 = getm $.Toybox.WatchUi;
+        %tmp.10 = getv function %tmp.9 :requestUpdate;
+        invoke %tmp.9 %tmp.10();
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_111_74_stop:
+    }
+}
+[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 117; ]
+class CommListener extends Communications.ConnectionListener{
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 117; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 117; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 119; ]
+    function initialize() as Void {
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_119_26_start:
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 120 8 ]
+        %tmp.1 = getm $.Toybox.Communications;
+        %tmp.2 = getv %tmp.1 :ConnectionListener;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_119_26_stop:
+    }
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 123; ]
+    function onComplete() {
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_123_26_start:
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 124 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Transmit Complete";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_123_26_stop:
+    }
+    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 127; ]
+    function onError() {
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_127_23_start:
+[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc" 128 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Transmit Failed";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projView_mc_127_23_stop:
+    }
+}
+[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projView.mc"; @line = 1; ]
+<init> {
+}

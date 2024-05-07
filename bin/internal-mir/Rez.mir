@@ -1,0 +1,281 @@
+[ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 2; ]
+using Toybox.WatchUi;
+[ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 3; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 4; ]
+using Toybox.Graphics;
+[ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 5; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 7; ]
+module Rez {
+    [ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 8; ]
+    module Drawables {
+        [ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        var LauncherIcon as Symbol;
+    }
+    [ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 12; ]
+    module Fonts {
+        [ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+    }
+    [ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 15; ]
+    module JsonData {
+        [ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 15; ]
+        <init> {
+        }
+    }
+    [ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 18; ]
+    module Layouts {
+        [ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 18; ]
+        <init> {
+        }
+        [ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 19; ]
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+c_Users_Dobre_Mihai_Desktop_PHD_proj_bin_gen_006_B3600_00_source_Rez_mcgen_19_74_start:
+[ "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen" 20 12 ]
+            [ "c_Users_Dobre_Mihai_Desktop_PHD_proj_bin_gen_006_B3600_00_source_Rez_mcgen_19_74_start" "c_Users_Dobre_Mihai_Desktop_PHD_proj_bin_gen_006_B3600_00_source_Rez_mcgen_19_74_stop" ]
+            %rez_cmp_local_text_MyLabel.1 = local;
+            %tmp.3 = getm $.Toybox.WatchUi;
+            %tmp.4 = getv function ? %tmp.3 :Text;
+            %tmp.5 = newd 4;
+            %tmp.7 = const :identifier;
+            %tmp.8 = "MyLabel";
+            %tmp.9 = dup %tmp.5;
+            %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+            %tmp.12 = const :locX;
+            %tmp.13 = 240;
+            %tmp.14 = 0.5;
+            %tmp.15 = mul %tmp.13 %tmp.14;
+            %tmp.16 = dup %tmp.10;
+            %tmp.17 = aputv %tmp.16 %tmp.12 %tmp.15;
+            %tmp.19 = const :locY;
+            %tmp.20 = 240;
+            %tmp.21 = lgetv %dc;
+            %tmp.22 = getv function %tmp.21 :getFontHeight;
+            %tmp.23 = getm $.Toybox.Graphics;
+            %tmp.24 = getv %tmp.23 :FONT_MEDIUM;
+            %tmp.25 = invoke %tmp.21 %tmp.22(%tmp.24);
+            %tmp.26 = sub %tmp.20 %tmp.25;
+            %tmp.27 = 0.5;
+            %tmp.28 = mul %tmp.26 %tmp.27;
+            %tmp.29 = dup %tmp.17;
+            %tmp.30 = aputv %tmp.29 %tmp.19 %tmp.28;
+            %tmp.32 = const :font;
+            %tmp.33 = getm $.Toybox.Graphics;
+            %tmp.34 = getv %tmp.33 :FONT_MEDIUM;
+            %tmp.35 = dup %tmp.30;
+            %tmp.36 = aputv %tmp.35 %tmp.32 %tmp.34;
+            %tmp.1 = newc %tmp.4 (%tmp.36);
+            lputv %rez_cmp_local_text_MyLabel.1 %tmp.1;
+[ "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen" 22 12 ]
+            [ "c_Users_Dobre_Mihai_Desktop_PHD_proj_bin_gen_006_B3600_00_source_Rez_mcgen_19_74_start" "c_Users_Dobre_Mihai_Desktop_PHD_proj_bin_gen_006_B3600_00_source_Rez_mcgen_19_74_stop" ]
+            %rez_cmp_local_text_heartRateLabel.2 = local;
+            %tmp.39 = getm $.Toybox.WatchUi;
+            %tmp.40 = getv function ? %tmp.39 :Text;
+            %tmp.41 = newd 6;
+            %tmp.43 = const :identifier;
+            %tmp.44 = "heartRateLabel";
+            %tmp.45 = dup %tmp.41;
+            %tmp.46 = aputv %tmp.45 %tmp.43 %tmp.44;
+            %tmp.48 = const :locX;
+            %tmp.49 = 240;
+            %tmp.50 = 0.5;
+            %tmp.51 = mul %tmp.49 %tmp.50;
+            %tmp.52 = dup %tmp.46;
+            %tmp.53 = aputv %tmp.52 %tmp.48 %tmp.51;
+            %tmp.55 = const :locY;
+            %tmp.56 = 240;
+            %tmp.57 = 20;
+            %tmp.58 = 100.0;
+            %tmp.59 = div %tmp.57 %tmp.58;
+            %tmp.60 = mul %tmp.56 %tmp.59;
+            %tmp.61 = dup %tmp.53;
+            %tmp.62 = aputv %tmp.61 %tmp.55 %tmp.60;
+            %tmp.64 = const :text;
+            %tmp.65 = "Heart rate: 0";
+            %tmp.66 = dup %tmp.62;
+            %tmp.67 = aputv %tmp.66 %tmp.64 %tmp.65;
+            %tmp.69 = const :justification;
+            %tmp.70 = getm $.Toybox.Graphics;
+            %tmp.71 = getv %tmp.70 :TEXT_JUSTIFY_CENTER;
+            %tmp.72 = dup %tmp.67;
+            %tmp.73 = aputv %tmp.72 %tmp.69 %tmp.71;
+            %tmp.75 = const :font;
+            %tmp.76 = getm $.Toybox.Graphics;
+            %tmp.77 = getv %tmp.76 :FONT_MEDIUM;
+            %tmp.78 = dup %tmp.73;
+            %tmp.79 = aputv %tmp.78 %tmp.75 %tmp.77;
+            %tmp.37 = newc %tmp.40 (%tmp.79);
+            lputv %rez_cmp_local_text_heartRateLabel.2 %tmp.37;
+[ "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen" 24 12 ]
+            [ "c_Users_Dobre_Mihai_Desktop_PHD_proj_bin_gen_006_B3600_00_source_Rez_mcgen_19_74_start" "c_Users_Dobre_Mihai_Desktop_PHD_proj_bin_gen_006_B3600_00_source_Rez_mcgen_19_74_stop" ]
+            %rez_cmp_local_text_stepsLabel.3 = local;
+            %tmp.82 = getm $.Toybox.WatchUi;
+            %tmp.83 = getv function ? %tmp.82 :Text;
+            %tmp.84 = newd 6;
+            %tmp.86 = const :identifier;
+            %tmp.87 = "stepsLabel";
+            %tmp.88 = dup %tmp.84;
+            %tmp.89 = aputv %tmp.88 %tmp.86 %tmp.87;
+            %tmp.91 = const :locX;
+            %tmp.92 = 240;
+            %tmp.93 = 0.5;
+            %tmp.94 = mul %tmp.92 %tmp.93;
+            %tmp.95 = dup %tmp.89;
+            %tmp.96 = aputv %tmp.95 %tmp.91 %tmp.94;
+            %tmp.98 = const :locY;
+            %tmp.99 = 240;
+            %tmp.100 = lgetv %dc;
+            %tmp.101 = getv function %tmp.100 :getFontHeight;
+            %tmp.102 = getm $.Toybox.Graphics;
+            %tmp.103 = getv %tmp.102 :FONT_MEDIUM;
+            %tmp.104 = invoke %tmp.100 %tmp.101(%tmp.103);
+            %tmp.105 = sub %tmp.99 %tmp.104;
+            %tmp.106 = 0.5;
+            %tmp.107 = mul %tmp.105 %tmp.106;
+            %tmp.108 = dup %tmp.96;
+            %tmp.109 = aputv %tmp.108 %tmp.98 %tmp.107;
+            %tmp.111 = const :text;
+            %tmp.112 = "Steps: 0";
+            %tmp.113 = dup %tmp.109;
+            %tmp.114 = aputv %tmp.113 %tmp.111 %tmp.112;
+            %tmp.116 = const :justification;
+            %tmp.117 = getm $.Toybox.Graphics;
+            %tmp.118 = getv %tmp.117 :TEXT_JUSTIFY_CENTER;
+            %tmp.119 = dup %tmp.114;
+            %tmp.120 = aputv %tmp.119 %tmp.116 %tmp.118;
+            %tmp.122 = const :font;
+            %tmp.123 = getm $.Toybox.Graphics;
+            %tmp.124 = getv %tmp.123 :FONT_MEDIUM;
+            %tmp.125 = dup %tmp.120;
+            %tmp.126 = aputv %tmp.125 %tmp.122 %tmp.124;
+            %tmp.80 = newc %tmp.83 (%tmp.126);
+            lputv %rez_cmp_local_text_stepsLabel.3 %tmp.80;
+[ "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen" 26 12 ]
+            [ "c_Users_Dobre_Mihai_Desktop_PHD_proj_bin_gen_006_B3600_00_source_Rez_mcgen_19_74_start" "c_Users_Dobre_Mihai_Desktop_PHD_proj_bin_gen_006_B3600_00_source_Rez_mcgen_19_74_stop" ]
+            %rez_cmp_local_text_caloriesLabel.4 = local;
+            %tmp.129 = getm $.Toybox.WatchUi;
+            %tmp.130 = getv function ? %tmp.129 :Text;
+            %tmp.131 = newd 6;
+            %tmp.133 = const :identifier;
+            %tmp.134 = "caloriesLabel";
+            %tmp.135 = dup %tmp.131;
+            %tmp.136 = aputv %tmp.135 %tmp.133 %tmp.134;
+            %tmp.138 = const :locX;
+            %tmp.139 = 240;
+            %tmp.140 = 0.5;
+            %tmp.141 = mul %tmp.139 %tmp.140;
+            %tmp.142 = dup %tmp.136;
+            %tmp.143 = aputv %tmp.142 %tmp.138 %tmp.141;
+            %tmp.145 = const :locY;
+            %tmp.146 = 240;
+            %tmp.147 = 60;
+            %tmp.148 = 100.0;
+            %tmp.149 = div %tmp.147 %tmp.148;
+            %tmp.150 = mul %tmp.146 %tmp.149;
+            %tmp.151 = dup %tmp.143;
+            %tmp.152 = aputv %tmp.151 %tmp.145 %tmp.150;
+            %tmp.154 = const :text;
+            %tmp.155 = "Calories burned: 0";
+            %tmp.156 = dup %tmp.152;
+            %tmp.157 = aputv %tmp.156 %tmp.154 %tmp.155;
+            %tmp.159 = const :justification;
+            %tmp.160 = getm $.Toybox.Graphics;
+            %tmp.161 = getv %tmp.160 :TEXT_JUSTIFY_CENTER;
+            %tmp.162 = dup %tmp.157;
+            %tmp.163 = aputv %tmp.162 %tmp.159 %tmp.161;
+            %tmp.165 = const :font;
+            %tmp.166 = getm $.Toybox.Graphics;
+            %tmp.167 = getv %tmp.166 :FONT_MEDIUM;
+            %tmp.168 = dup %tmp.163;
+            %tmp.169 = aputv %tmp.168 %tmp.165 %tmp.167;
+            %tmp.127 = newc %tmp.130 (%tmp.169);
+            lputv %rez_cmp_local_text_caloriesLabel.4 %tmp.127;
+[ "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen" 28 12 ]
+            [ "c_Users_Dobre_Mihai_Desktop_PHD_proj_bin_gen_006_B3600_00_source_Rez_mcgen_19_74_start" "c_Users_Dobre_Mihai_Desktop_PHD_proj_bin_gen_006_B3600_00_source_Rez_mcgen_19_74_stop" ]
+            %rez_cmp_local_text_respirationLabel.5 = local;
+            %tmp.172 = getm $.Toybox.WatchUi;
+            %tmp.173 = getv function ? %tmp.172 :Text;
+            %tmp.174 = newd 6;
+            %tmp.176 = const :identifier;
+            %tmp.177 = "respirationLabel";
+            %tmp.178 = dup %tmp.174;
+            %tmp.179 = aputv %tmp.178 %tmp.176 %tmp.177;
+            %tmp.181 = const :locX;
+            %tmp.182 = 240;
+            %tmp.183 = 0.5;
+            %tmp.184 = mul %tmp.182 %tmp.183;
+            %tmp.185 = dup %tmp.179;
+            %tmp.186 = aputv %tmp.185 %tmp.181 %tmp.184;
+            %tmp.188 = const :locY;
+            %tmp.189 = 240;
+            %tmp.190 = 80;
+            %tmp.191 = 100.0;
+            %tmp.192 = div %tmp.190 %tmp.191;
+            %tmp.193 = mul %tmp.189 %tmp.192;
+            %tmp.194 = dup %tmp.186;
+            %tmp.195 = aputv %tmp.194 %tmp.188 %tmp.193;
+            %tmp.197 = const :text;
+            %tmp.198 = "Calories burned: 0";
+            %tmp.199 = dup %tmp.195;
+            %tmp.200 = aputv %tmp.199 %tmp.197 %tmp.198;
+            %tmp.202 = const :justification;
+            %tmp.203 = getm $.Toybox.Graphics;
+            %tmp.204 = getv %tmp.203 :TEXT_JUSTIFY_CENTER;
+            %tmp.205 = dup %tmp.200;
+            %tmp.206 = aputv %tmp.205 %tmp.202 %tmp.204;
+            %tmp.208 = const :font;
+            %tmp.209 = getm $.Toybox.Graphics;
+            %tmp.210 = getv %tmp.209 :FONT_MEDIUM;
+            %tmp.211 = dup %tmp.206;
+            %tmp.212 = aputv %tmp.211 %tmp.208 %tmp.210;
+            %tmp.170 = newc %tmp.173 (%tmp.212);
+            lputv %rez_cmp_local_text_respirationLabel.5 %tmp.170;
+[ "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen" 30 12 ]
+            %tmp.213 = newa Array<WatchUi.Drawable> 5;
+            %tmp.215 = lgetv %rez_cmp_local_text_MyLabel.1;
+            %tmp.216 = dup %tmp.213;
+            %tmp.217 = aputv %tmp.216 0 %tmp.215;
+            %tmp.219 = lgetv %rez_cmp_local_text_heartRateLabel.2;
+            %tmp.220 = dup %tmp.217;
+            %tmp.221 = aputv %tmp.220 1 %tmp.219;
+            %tmp.223 = lgetv %rez_cmp_local_text_stepsLabel.3;
+            %tmp.224 = dup %tmp.221;
+            %tmp.225 = aputv %tmp.224 2 %tmp.223;
+            %tmp.227 = lgetv %rez_cmp_local_text_caloriesLabel.4;
+            %tmp.228 = dup %tmp.225;
+            %tmp.229 = aputv %tmp.228 3 %tmp.227;
+            %tmp.231 = lgetv %rez_cmp_local_text_respirationLabel.5;
+            %tmp.232 = dup %tmp.229;
+            %tmp.233 = aputv %tmp.232 4 %tmp.231;
+            ret %tmp.233;
+c_Users_Dobre_Mihai_Desktop_PHD_proj_bin_gen_006_B3600_00_source_Rez_mcgen_19_74_stop:
+        }
+    }
+    [ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 34; ]
+    module Menus {
+        [ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 34; ]
+        <init> {
+        }
+    }
+    [ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 37; ]
+    module Strings {
+        [ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 37; ]
+        <init> {
+        }
+        [ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 38; @position = 27; initialized = true; ]
+        var AppName as Symbol;
+    }
+}
+[ @file = "c:\Users\Dobre Mihai\Desktop\PHD\proj\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 1; ]
+<init> {
+}

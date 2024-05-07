@@ -1,0 +1,7 @@
+<layout id="MainLayout">
+    <label id="MyLabel" x="center" y="center" />
+    <label id="heartRateLabel" text="Heart rate: 0" x="center" y="20%" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_CENTER"/>
+    <label id="stepsLabel" text="Steps: 0" x="center" y="center" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_CENTER"/>
+    <label id="caloriesLabel" text="Calories burned: 0" x="center" y="60%" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_CENTER"/>
+    <label id="respirationLabel" text="Calories burned: 0" x="center" y="80%" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_CENTER"/>
+</layout>
