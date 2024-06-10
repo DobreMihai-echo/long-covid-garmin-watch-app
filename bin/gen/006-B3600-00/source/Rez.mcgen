@@ -6,6 +6,12 @@ using Toybox.Graphics as Gfx;
 
 module Rez {
     module Drawables {
+        (:initialized) var spo2Icon as Symbol;
+        (:initialized) var heartRateIcon as Symbol;
+        (:initialized) var stepsIcon as Symbol;
+        (:initialized) var caloriesIcon as Symbol;
+        (:initialized) var respirationIcon as Symbol;
+        (:initialized) var bodyBatteryIcon as Symbol;
         (:initialized) var LauncherIcon as Symbol;
     } // Drawables
 
@@ -17,17 +23,31 @@ module Rez {
 
     module Layouts {
         function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_text_MyLabel = new WatchUi.Text({:identifier=>"MyLabel", :locX=>(240 * 0.5), :locY=>((240 - dc.getFontHeight(Graphics.FONT_MEDIUM)) * 0.5), :font=>Graphics.FONT_MEDIUM});
+            var rez_cmp_local_bitmap_spo2Icon = new WatchUi.Bitmap({:identifier=>"spo2Icon", :rezId=>$.Rez.Drawables.spo2Icon, :locX=>10, :locY=>10});
 
-            var rez_cmp_local_text_heartRateLabel = new WatchUi.Text({:identifier=>"heartRateLabel", :locX=>(240 * 0.5), :locY=>(240 * (20 / 100.0)), :text=>"Heart rate: 0", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_MEDIUM});
+            var rez_cmp_local_text_spo2 = new WatchUi.Text({:identifier=>"spo2", :locX=>40, :locY=>10, :text=>"Spo2: 0", :justification=>Gfx.TEXT_JUSTIFY_LEFT, :font=>Gfx.FONT_MEDIUM});
 
-            var rez_cmp_local_text_stepsLabel = new WatchUi.Text({:identifier=>"stepsLabel", :locX=>(240 * 0.5), :locY=>((240 - dc.getFontHeight(Gfx.FONT_MEDIUM)) * 0.5), :text=>"Steps: 0", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_MEDIUM});
+            var rez_cmp_local_bitmap_heartRateIcon = new WatchUi.Bitmap({:identifier=>"heartRateIcon", :rezId=>$.Rez.Drawables.heartRateIcon, :locX=>10, :locY=>40});
 
-            var rez_cmp_local_text_caloriesLabel = new WatchUi.Text({:identifier=>"caloriesLabel", :locX=>(240 * 0.5), :locY=>(240 * (60 / 100.0)), :text=>"Calories burned: 0", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_MEDIUM});
+            var rez_cmp_local_text_heartRateLabel = new WatchUi.Text({:identifier=>"heartRateLabel", :locX=>40, :locY=>40, :text=>"Heart rate: 0", :justification=>Gfx.TEXT_JUSTIFY_LEFT, :font=>Gfx.FONT_MEDIUM});
 
-            var rez_cmp_local_text_respirationLabel = new WatchUi.Text({:identifier=>"respirationLabel", :locX=>(240 * 0.5), :locY=>(240 * (80 / 100.0)), :text=>"Calories burned: 0", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_MEDIUM});
+            var rez_cmp_local_bitmap_stepsIcon = new WatchUi.Bitmap({:identifier=>"stepsIcon", :rezId=>$.Rez.Drawables.stepsIcon, :locX=>10, :locY=>70});
 
-            return [rez_cmp_local_text_MyLabel, rez_cmp_local_text_heartRateLabel, rez_cmp_local_text_stepsLabel, rez_cmp_local_text_caloriesLabel, rez_cmp_local_text_respirationLabel] as Array<WatchUi.Drawable>;
+            var rez_cmp_local_text_stepsLabel = new WatchUi.Text({:identifier=>"stepsLabel", :locX=>40, :locY=>70, :text=>"Steps: 0", :justification=>Gfx.TEXT_JUSTIFY_LEFT, :font=>Gfx.FONT_MEDIUM});
+
+            var rez_cmp_local_bitmap_caloriesIcon = new WatchUi.Bitmap({:identifier=>"caloriesIcon", :rezId=>$.Rez.Drawables.caloriesIcon, :locX=>10, :locY=>100});
+
+            var rez_cmp_local_text_caloriesLabel = new WatchUi.Text({:identifier=>"caloriesLabel", :locX=>40, :locY=>100, :text=>"Calories burned: 0", :justification=>Gfx.TEXT_JUSTIFY_LEFT, :font=>Gfx.FONT_MEDIUM});
+
+            var rez_cmp_local_bitmap_respirationIcon = new WatchUi.Bitmap({:identifier=>"respirationIcon", :rezId=>$.Rez.Drawables.respirationIcon, :locX=>10, :locY=>130});
+
+            var rez_cmp_local_text_respirationLabel = new WatchUi.Text({:identifier=>"respirationLabel", :locX=>40, :locY=>130, :text=>"Respiration: 0", :justification=>Gfx.TEXT_JUSTIFY_LEFT, :font=>Gfx.FONT_MEDIUM});
+
+            var rez_cmp_local_bitmap_bodyBatteryIcon = new WatchUi.Bitmap({:identifier=>"bodyBatteryIcon", :rezId=>$.Rez.Drawables.bodyBatteryIcon, :locX=>10, :locY=>160});
+
+            var rez_cmp_local_text_bodyBattery = new WatchUi.Text({:identifier=>"bodyBattery", :locX=>40, :locY=>160, :text=>"Body Battery: 0", :justification=>Gfx.TEXT_JUSTIFY_LEFT, :font=>Gfx.FONT_MEDIUM});
+
+            return [rez_cmp_local_bitmap_spo2Icon, rez_cmp_local_text_spo2, rez_cmp_local_bitmap_heartRateIcon, rez_cmp_local_text_heartRateLabel, rez_cmp_local_bitmap_stepsIcon, rez_cmp_local_text_stepsLabel, rez_cmp_local_bitmap_caloriesIcon, rez_cmp_local_text_caloriesLabel, rez_cmp_local_bitmap_respirationIcon, rez_cmp_local_text_respirationLabel, rez_cmp_local_bitmap_bodyBatteryIcon, rez_cmp_local_text_bodyBattery] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 

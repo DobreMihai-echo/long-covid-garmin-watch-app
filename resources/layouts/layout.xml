@@ -1,7 +1,19 @@
 <layout id="MainLayout">
-    <label id="MyLabel" x="center" y="center" />
-    <label id="heartRateLabel" text="Heart rate: 0" x="center" y="20%" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_CENTER"/>
-    <label id="stepsLabel" text="Steps: 0" x="center" y="center" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_CENTER"/>
-    <label id="caloriesLabel" text="Calories burned: 0" x="center" y="60%" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_CENTER"/>
-    <label id="respirationLabel" text="Calories burned: 0" x="center" y="80%" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_CENTER"/>
+    <bitmap id="spo2Icon" x="10" y="10" filename="../drawables/spo2.png"/>
+    <label id="spo2" text="Spo2: 0" x="40" y="10" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_LEFT"/>
+
+    <bitmap id="heartRateIcon" x="10" y="40" filename="../drawables/heart.png"/>
+    <label id="heartRateLabel" text="Heart rate: 0" x="40" y="40" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_LEFT"/>
+
+    <bitmap id="stepsIcon" x="10" y="70" filename="../drawables/steps.png"/>
+    <label id="stepsLabel" text="Steps: 0" x="40" y="70" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_LEFT"/>
+
+    <bitmap id="caloriesIcon" x="10" y="100" filename="../drawables/calories.png"/>
+    <label id="caloriesLabel" text="Calories burned: 0" x="40" y="100" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_LEFT"/>
+
+    <bitmap id="respirationIcon" x="10" y="130" filename="../drawables/oxygen.png"/>
+    <label id="respirationLabel" text="Respiration: 0" x="40" y="130" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_LEFT"/>
+
+    <bitmap id="bodyBatteryIcon" x="10" y="160" filename="../drawables/battery.png"/>
+    <label id="bodyBattery" text="Body Battery: 0" x="40" y="160" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_LEFT"/>
 </layout>

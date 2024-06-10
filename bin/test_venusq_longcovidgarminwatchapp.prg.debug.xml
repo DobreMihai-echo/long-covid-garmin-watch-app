@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="1" lineNum="9" parent="globals/projView" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="2" lineNum="111" parent="globals/projView" pc="268435479" symbol="updateStepsValue"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="2" lineNum="112" parent="globals/projView" pc="268435481" symbol="updateStepsValue"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="2" lineNum="114" parent="globals/projView" pc="268435516" symbol="updateStepsValue"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="65" parent="globals/projView" pc="268435533" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="66" parent="globals/projView" pc="268435537" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="67" parent="globals/projView" pc="268435557" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="69" parent="globals/projView" pc="268435570" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="70" parent="globals/projView" pc="268435597" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="73" parent="globals/projView" pc="268435616" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="74" parent="globals/projView" pc="268435619" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="75" parent="globals/projView" pc="268435645" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="77" parent="globals/projView" pc="268435673" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="78" parent="globals/projView" pc="268435680" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="79" parent="globals/projView" pc="268435693" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="80" parent="globals/projView" pc="268435700" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="81" parent="globals/projView" pc="268435728" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="83" parent="globals/projView" pc="268435766" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="87" parent="globals/projView" pc="268435772" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="88" parent="globals/projView" pc="268435789" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="89" parent="globals/projView" pc="268435805" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="90" parent="globals/projView" pc="268435821" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="91" parent="globals/projView" pc="268435837" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="93" parent="globals/projView" pc="268435853" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="94" parent="globals/projView" pc="268435873" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="95" parent="globals/projView" pc="268435893" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="96" parent="globals/projView" pc="268435913" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="97" parent="globals/projView" pc="268435933" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="3" lineNum="102" parent="globals/projView" pc="268435973" symbol="fetchHeartRateData"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="4" lineNum="58" parent="globals/projView" pc="268436002" symbol="onHide"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="4" lineNum="59" parent="globals/projView" pc="268436004" symbol="onHide"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="4" lineNum="60" parent="globals/projView" pc="268436017" symbol="onHide"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="4" lineNum="61" parent="globals/projView" pc="268436035" symbol="onHide"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="5" lineNum="47" parent="globals/projView" pc="268436048" symbol="onShow"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="5" lineNum="48" parent="globals/projView" pc="268436052" symbol="onShow"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="5" lineNum="49" parent="globals/projView" pc="268436065" symbol="onShow"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="5" lineNum="50" parent="globals/projView" pc="268436093" symbol="onShow"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="6" lineNum="36" parent="globals/projView" pc="268436132" symbol="onLayout"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="6" lineNum="37" parent="globals/projView" pc="268436134" symbol="onLayout"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="6" lineNum="38" parent="globals/projView" pc="268436175" symbol="onLayout"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="6" lineNum="39" parent="globals/projView" pc="268436199" symbol="onLayout"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="6" lineNum="40" parent="globals/projView" pc="268436223" symbol="onLayout"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="6" lineNum="41" parent="globals/projView" pc="268436247" symbol="onLayout"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="6" lineNum="42" parent="globals/projView" pc="268436271" symbol="onLayout"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="6" lineNum="43" parent="globals/projView" pc="268436295" symbol="onLayout"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="6" lineNum="44" parent="globals/projView" pc="268436319" symbol="onLayout"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="7" lineNum="106" parent="globals/projView" pc="268436344" symbol="updateHeartRateValue"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="7" lineNum="107" parent="globals/projView" pc="268436346" symbol="updateHeartRateValue"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="7" lineNum="108" parent="globals/projView" pc="268436381" symbol="updateHeartRateValue"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="8" lineNum="117" parent="globals/projView" pc="268436398" symbol="updateCaloriesMinutesValue"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="8" lineNum="118" parent="globals/projView" pc="268436400" symbol="updateCaloriesMinutesValue"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="8" lineNum="119" parent="globals/projView" pc="268436435" symbol="updateCaloriesMinutesValue"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="9" lineNum="127" parent="globals/projView" pc="268436452" symbol="getIterator"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="9" lineNum="128" parent="globals/projView" pc="268436456" symbol="getIterator"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="9" lineNum="129" parent="globals/projView" pc="268436495" symbol="getIterator"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="9" lineNum="130" parent="globals/projView" pc="268436495" symbol="getIterator"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="9" lineNum="131" parent="globals/projView" pc="268436518" symbol="getIterator"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="9" lineNum="133" parent="globals/projView" pc="268436530" symbol="getIterator"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="9" lineNum="135" parent="globals/projView" pc="268436534" symbol="getIterator"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="9" lineNum="141" parent="globals/projView" pc="268436555" symbol="getIterator"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="10" lineNum="32" parent="globals/projView" pc="268436557" symbol="initialize"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="10" lineNum="33" parent="globals/projView" pc="268436559" symbol="initialize"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="11" lineNum="122" parent="globals/projView" pc="268436578" symbol="updateRespirationMinutesValue"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="11" lineNum="123" parent="globals/projView" pc="268436580" symbol="updateRespirationMinutesValue"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="11" lineNum="124" parent="globals/projView" pc="268436615" symbol="updateRespirationMinutesValue"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="12" lineNum="54" parent="globals/projView" pc="268436632" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="12" lineNum="55" parent="globals/projView" pc="268436634" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projApp.mc" id="13" lineNum="71" parent="globals" pc="268436655" symbol="getApp"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projApp.mc" id="13" lineNum="72" parent="globals" pc="268436665" symbol="getApp"/>
+        <entry filename="c:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\bin\\gen\\006-B3600-00\\source\\Rez.mcgen" id="14" lineNum="7" parent="globals/Rez" pc="268436681" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="15" lineNum="145" parent="globals/CommListener" pc="268436705" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="16" lineNum="155" parent="globals/CommListener" pc="268436724" symbol="onError"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="16" lineNum="156" parent="globals/CommListener" pc="268436726" symbol="onError"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="17" lineNum="151" parent="globals/CommListener" pc="268436748" symbol="onComplete"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="17" lineNum="152" parent="globals/CommListener" pc="268436750" symbol="onComplete"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="18" lineNum="147" parent="globals/CommListener" pc="268436772" symbol="initialize"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projView.mc" id="18" lineNum="148" parent="globals/CommListener" pc="268436774" symbol="initialize"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projApp.mc" id="19" lineNum="14" parent="globals/projApp" pc="268436797" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projApp.mc" id="20" lineNum="22" parent="globals/projApp" pc="268436816" symbol="onStart"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projApp.mc" id="21" lineNum="30" parent="globals/projApp" pc="268436819" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projApp.mc" id="21" lineNum="31" parent="globals/projApp" pc="268436821" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projApp.mc" id="22" lineNum="16" parent="globals/projApp" pc="268436862" symbol="initialize"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projApp.mc" id="22" lineNum="17" parent="globals/projApp" pc="268436864" symbol="initialize"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projApp.mc" id="23" lineNum="26" parent="globals/projApp" pc="268436883" symbol="onStop"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projApp.mc" id="24" lineNum="34" parent="globals/projApp" pc="268436886" symbol="onPhone"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projApp.mc" id="24" lineNum="47" parent="globals/projApp" pc="268436888" symbol="onPhone"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projApp.mc" id="25" lineNum="50" parent="globals/projApp" pc="268436905" symbol="timerCallback"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projApp.mc" id="25" lineNum="52" parent="globals/projApp" pc="268436907" symbol="timerCallback"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projDelegate.mc" id="26" lineNum="4" parent="globals/projDelegate" pc="268436931" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projDelegate.mc" id="27" lineNum="6" parent="globals/projDelegate" pc="268436950" symbol="initialize"/>
+        <entry filename="C:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\source\\projDelegate.mc" id="27" lineNum="7" parent="globals/projDelegate" pc="268436952" symbol="initialize"/>
+        <entry filename="c:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\bin\\gen\\006-B3600-00\\source\\Rez.mcgen" id="28" lineNum="19" parent="globals/Rez/Layouts" pc="268436971" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\bin\\gen\\006-B3600-00\\source\\Rez.mcgen" id="28" lineNum="20" parent="globals/Rez/Layouts" pc="268436983" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\dobre.mihai\\Desktop\\PHD\\Garmin\\long-covid-garmin-watch-app\\bin\\gen\\006-B3600-00\\source\\Rez.mcgen" id="28" lineNum="22" parent="globals/Rez/Layouts" pc="268437095" symbol="MainLayout"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry field="true" id="26" symbol="respiration"/>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8389346" symbol="text"/>
+        <entry field="true" id="21" symbol="_spo2Sensor"/>
+        <entry field="true" id="10" symbol="crashOnMessage"/>
+        <entry field="true" id="8388936" method="true" symbol="info"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="32" method="true" symbol="updateStepsValue"/>
+        <entry id="13" object="true" symbol="projApp"/>
+        <entry id="7" module="true" symbol="globals/Rez/Menus"/>
+        <entry field="true" id="8391583" symbol="currentOxygenSaturation"/>
+        <entry id="39" method="true" symbol="MainLayout"/>
+        <entry field="true" id="27" symbol="spo2Sensor"/>
+        <entry field="true" id="8388737" symbol="calories"/>
+        <entry field="true" id="22" symbol="_stepsLabel"/>
+        <entry id="30" method="true" symbol="updateHeartRateValue"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="40" symbol="AppName"/>
+        <entry id="8388633" module="true" symbol="ActivityMonitor"/>
+        <entry id="25" method="true" symbol="getIterator"/>
+        <entry id="8" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry field="true" id="8388912" symbol="steps"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry field="true" id="8389138" symbol="label"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="8391831" symbol="respirationRate"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry field="true" id="23" symbol="accelSensor"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="35" module="true" symbol="Menus"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="15" object="true" symbol="projView"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="8391512" method="true" symbol="getOxygenSaturationHistory"/>
+        <entry field="true" id="17" symbol="_activeLabel"/>
+        <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
+        <entry field="true" id="12" symbol="phoneMethod"/>
+        <entry id="8388637" module="true" symbol="Communications"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry field="true" id="8389870" symbol="activeMinutesDay"/>
+        <entry id="8388828" method="true" symbol="onError"/>
+        <entry field="true" id="19" symbol="_heartRateLabel"/>
+        <entry id="24" method="true" symbol="fetchHeartRateData"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry field="true" id="18" symbol="_caloriesLabel"/>
+        <entry id="37" method="true" symbol="timerCallback"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry field="true" id="16" symbol="_accelSensor"/>
+        <entry field="true" id="20" symbol="_respirationLabel"/>
+        <entry field="true" id="38" symbol="LauncherIcon"/>
+        <entry id="9" object="true" symbol="CommListener"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8388643" module="true" symbol="Sensor"/>
+        <entry field="true" id="33" symbol="updateTimer"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry field="true" id="8388960" symbol="heartRate"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="29" method="true" symbol="updateCaloriesMinutesValue"/>
+        <entry id="14" object="true" symbol="projDelegate"/>
+        <entry id="36" method="true" symbol="onPhone"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8389781" module="true" symbol="SensorHistory"/>
+        <entry id="31" method="true" symbol="updateRespirationMinutesValue"/>
+        <entry id="8388829" method="true" symbol="onComplete"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
+        <entry id="34" module="true" symbol="Layouts"/>
+        <entry field="true" id="11" symbol="dataTimer"/>
+        <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry field="true" id="28" symbol="stepsLabel"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435532" name="steps" stackId="1" startPc="268435479"/>
+        <entry endPc="268436000" name="hrIterator" stackId="1" startPc="268435537"/>
+        <entry endPc="268436000" name="sample" stackId="2" startPc="268435537"/>
+        <entry endPc="268436000" name="pulseOxData" stackId="3" startPc="268435537"/>
+        <entry endPc="268435768" name="sensorIter" stackId="4" startPc="268435680"/>
+        <entry endPc="268436000" name="info" stackId="5" startPc="268435537"/>
+        <entry endPc="268436000" name="dataToSend" stackId="6" startPc="268435537"/>
+        <entry endPc="268436000" name="listener" stackId="7" startPc="268435537"/>
+        <entry endPc="268436127" name="myTimer" stackId="1" startPc="268436065"/>
+        <entry arg="true" endPc="268436343" name="dc" stackId="1" startPc="268436132"/>
+        <entry arg="true" endPc="268436397" name="heartRate" stackId="1" startPc="268436344"/>
+        <entry arg="true" endPc="268436451" name="calories" stackId="1" startPc="268436398"/>
+        <entry endPc="268436523" name="ret" stackId="1" startPc="268436495"/>
+        <entry endPc="268436546" name="ex" stackId="2" startPc="268436530"/>
+        <entry arg="true" endPc="268436631" name="respiration" stackId="1" startPc="268436578"/>
+        <entry arg="true" endPc="268436654" name="dc" stackId="1" startPc="268436632"/>
+        <entry arg="true" endPc="268436904" name="msg" stackId="1" startPc="268436886"/>
+        <entry arg="true" endPc="268437111" name="dc" stackId="1" startPc="268436971"/>
+        <entry endPc="268437111" name="rez_cmp_local_text_spo2" stackId="2" startPc="268436983"/>
+    </localVars>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/projView" offset="206" parentId="globals" symbolId="projView" type="class"/>
+        <dataEntry label="globals/Rez" offset="477" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/CommListener" offset="556" parentId="globals" symbolId="CommListener" type="class"/>
+        <dataEntry label="globals/projApp" offset="619" parentId="globals" symbolId="projApp" type="class"/>
+        <dataEntry label="globals/projDelegate" offset="706" parentId="globals" symbolId="projDelegate" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="753" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="792" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="831" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="862" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="893" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="932" parentId="Rez" symbolId="JsonData" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="projView" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435532" name="updateStepsValue" parent="projView" startPc="268435479">
+            <param id="steps"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436001" name="fetchHeartRateData" parent="projView" startPc="268435533">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436047" name="onHide" parent="projView" startPc="268436002">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436131" name="onShow" parent="projView" startPc="268436048">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436343" name="onLayout" parent="projView" startPc="268436132">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436397" name="updateHeartRateValue" parent="projView" startPc="268436344">
+            <param id="heartRate"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436451" name="updateCaloriesMinutesValue" parent="projView" startPc="268436398">
+            <param id="calories"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436556" name="getIterator" parent="projView" startPc="268436452">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436577" name="initialize" parent="projView" startPc="268436557">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436631" name="updateRespirationMinutesValue" parent="projView" startPc="268436578">
+            <param id="respiration"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436654" name="onUpdate" parent="projView" startPc="268436632">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436680" name="getApp" startPc="268436655">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436704" name="&lt;init&gt;" parent="Rez" startPc="268436681">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436723" name="&lt;init&gt;" parent="CommListener" startPc="268436705">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436747" name="onError" parent="CommListener" startPc="268436724">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436771" name="onComplete" parent="CommListener" startPc="268436748">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436796" name="initialize" parent="CommListener" startPc="268436772">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436815" name="&lt;init&gt;" parent="projApp" startPc="268436797">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436818" name="onStart" parent="projApp" startPc="268436816">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436861" name="getInitialView" parent="projApp" startPc="268436819">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436882" name="initialize" parent="projApp" startPc="268436862">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436885" name="onStop" parent="projApp" startPc="268436883">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436904" name="onPhone" parent="projApp" startPc="268436886">
+            <param id="msg"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436930" name="timerCallback" parent="projApp" startPc="268436905">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436949" name="&lt;init&gt;" parent="projDelegate" startPc="268436931">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436970" name="initialize" parent="projDelegate" startPc="268436950">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437111" name="MainLayout" parent="Layouts" startPc="268436971">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

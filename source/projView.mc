@@ -5,6 +5,8 @@ import Toybox.Timer;
 import Toybox.Lang;
 import Toybox.System;
 import Toybox.Communications;
+using Toybox.Sensor;
+import Toybox.SensorHistory;
 
 class projView extends WatchUi.View {
 
@@ -12,21 +14,33 @@ class projView extends WatchUi.View {
     var stepsLabel;
     var heartRate = 0;
     var steps = 0;
+    var stress = 0;
     var respirationRate = 0;
     var activeMinutesDay = 0;
     var calories = 0;
     var respiration = 0;
     var updateTimer = null;
+    var sensorManager;
+    var bodyBatery = 0;
+    var accelometerX=[];
+    var accelometerY=[];
+    var accelometerZ=[];
+    private var hasBodyBattery as Boolean;
 
     var _heartRateLabel;
+    var _spo2;
     var _stepsLabel;
     var _activeLabel;
     var _caloriesLabel;
     var _respirationLabel;
+    var _bodyBattery;
 
     function initialize() {
         
         View.initialize();
+        sensorManager = new SensorManager();
+        sensorManager.startAccelerometer();
+        hasBodyBattery = Toybox has :SensorHistory && Toybox.SensorHistory has :getBodyBatteryHistory;
     }
 
     function onLayout(dc as Dc) as Void {
@@ -36,10 +50,12 @@ class projView extends WatchUi.View {
         _activeLabel = findDrawableById("activeLabel");
         _caloriesLabel = findDrawableById("caloriesLabel");
         _respirationLabel = findDrawableById("respirationLabel");
+        _spo2 = findDrawableById("spo2");
+        _bodyBattery = findDrawableById("bodyBattery");
     }
 
     function onShow() as Void {
-       if(updateTimer == null) {
+        if(updateTimer == null) {
             var myTimer = new Timer.Timer();
             myTimer.start(method(:fetchHeartRateData), 500, true);
         }
@@ -56,44 +72,92 @@ class projView extends WatchUi.View {
         }
     }
 
-    function fetchHeartRateData() as Void {
-        var hrIterator = ActivityMonitor.getHeartRateHistory(null, false);
-        var previous = hrIterator.next();                                   
-        var lastSampleTime = null;                                          
-        var sample = hrIterator.next();
-
-        if (null != sample) {                                           
-            if (sample.heartRate != ActivityMonitor.INVALID_HR_SAMPLE   
-                && previous.heartRate
-                != ActivityMonitor.INVALID_HR_SAMPLE) {
-                    lastSampleTime = sample.when;
-                    heartRate = previous.heartRate;
-                    System.println("Previous: " + previous.heartRate);  
-                    System.println("Sample: " + sample.heartRate);      
-                    System.println("LAST SAMPLE:" + lastSampleTime);
+        function getIterator() {
+        if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getOxygenSaturationHistory)) {
+            try {
+                var ret = Toybox.SensorHistory.getOxygenSaturationHistory({});
+                System.println("LAST SAMPLE:" + ret);
+                return ret;
+            }
+            catch( ex ) {
+                // Code to catch all execeptions
+                return null;
+            }
+            finally {
+                // Code to execute when
+            }
         }
+        return null;
     }
+
+    function fetchHeartRateData() as Void {
+         if (hasBodyBattery) {
+            var iterator = Toybox.SensorHistory.getBodyBatteryHistory({:period => 1, :order => SensorHistory.ORDER_NEWEST_FIRST});
+            var sample = iterator.next();
+            if (sample != null && (sample as SensorSample).data != null) {
+                bodyBatery = ((sample as SensorSample).data as Number).toNumber();
+                _bodyBattery.setText("Body Battery: " + bodyBatery);
+            } else {
+                bodyBatery = "--";
+            }
+        } else {
+        }
+         var heartRate = null;
+         var activity = Activity.getActivityInfo();
+        if (activity != null) {
+            heartRate = activity.currentHeartRate;
+            if(heartRate != null) {
+                updateHeartRateValue(heartRate);
+            }
+        }
+
+        var pulseOxData = null;
+        if (Activity.getActivityInfo() has :currentOxygenSaturation) {
+        	pulseOxData = Activity.getActivityInfo().currentOxygenSaturation ;
+            if (pulseOxData != null) {
+                updatePulseOx(pulseOxData);
+            }
+        }
+
         var info = ActivityMonitor.getInfo();
         steps = info.steps;
-        respirationRate = info.respirationRate;
+        var distance = info.distance/100;
         calories = info.calories;
         respiration = info.respirationRate;
 
-        updateHeartRateValue(heartRate);
         updateStepsValue(steps);
         updateCaloriesMinutesValue(calories);
         updateRespirationMinutesValue(respiration);
+        accelometerX=sensorManager.accelometerX;
+        accelometerY=sensorManager.accelometerY;
+        accelometerZ=sensorManager.accelometerZ;
+        
         var dataToSend = {
             "heartRate" => heartRate,
-            "calories"=>calories
+            "pulseOx" => pulseOxData,
+            "calories"=>calories,
+            "respiration"=>respiration,
+            "distance"=>distance,
+            "steps"=>steps,
+            "bodyBatery"=>bodyBatery,
+            "accelometerX"=>accelometerX,
+            "accelometerY"=>accelometerY,
+            "accelometerZ"=>accelometerZ
         };
+        System.println("DATA TO SEND" + dataToSend);
+        sensorManager.clearAccelometerData();
 
         var listener = new CommListener();
-        Communications.transmit(dataToSend, null, listener);
+       // Communications.transmit(dataToSend, null, listener);
     }
 
     function updateHeartRateValue(heartRate as Number) as Void {
          _heartRateLabel.setText("Heart rate:" + heartRate.toString());
+         WatchUi.requestUpdate();
+    }
+
+    function updatePulseOx(pulseOx as Number) as Void {
+         _spo2.setText("PulseOx:" + pulseOx.toString());
          WatchUi.requestUpdate();
     }
 
@@ -126,5 +190,42 @@ class CommListener extends Communications.ConnectionListener {
 
     function onError() {
         System.println("Transmit Failed");
+    }
+}
+
+class SensorManager {
+    const SENSOR_PERIOD_SEC = 4; 
+    const SENSOR_FREQ = 10;      
+    var accelometerX=[];
+    var accelometerY=[];
+    var accelometerZ=[];
+
+    function initialize() {
+        System.println("SensorManager initialized");
+    }
+    
+    function startAccelerometer() {
+        System.println("Starting accelerometer");
+        var options = {
+            :period => SENSOR_PERIOD_SEC,
+            :accelerometer => {
+                :enabled => true,
+                :sampleRate => SENSOR_FREQ
+            }
+        };
+        
+        Sensor.registerSensorDataListener(method(:onAccelData), options);
+    }
+
+    function onAccelData(sensorData as Sensor.SensorData) as Void {
+        accelometerX.add(sensorData.accelerometerData.x); 
+        accelometerY.add(sensorData.accelerometerData.y); 
+        accelometerZ.add(sensorData.accelerometerData.z);
+    }
+
+    function clearAccelometerData() as Void {
+        accelometerX = [];
+        accelometerY = [];
+        accelometerZ = [];
     }
 }

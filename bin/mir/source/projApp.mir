@@ -1,94 +1,94 @@
-[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 1; ]
+[ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 1; ]
 import Toybox.Application;
-[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 2; ]
+[ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 2; ]
 import Toybox.Lang;
-[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 3; ]
+[ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 3; ]
 import Toybox.WatchUi;
-[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 4; ]
+[ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 4; ]
 using Toybox.Communications as :Comm;
-[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 5; ]
+[ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 5; ]
 using Toybox.System as :Sys;
-[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 6; ]
+[ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 6; ]
 using Toybox.Sensor as :Sensor;
-[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 7; ]
+[ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 7; ]
 using Toybox.Timer as :Timer;
-[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 9; @position = 4; ]
+[ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 9; @position = 4; ]
 var phoneMethod;
-[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 10; @position = 4; ]
+[ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 10; @position = 4; ]
 var crashOnMessage = false;
-[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 11; @position = 4; ]
+[ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 11; @position = 4; ]
 var dataTimer;
-[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 12; @position = 4; ]
+[ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 12; @position = 4; ]
 var info;
-[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 13; @position = 6; ]
+[ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 13; @position = 6; ]
 const SAMPLE_PERIOD = 5000;
-[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 14; ]
+[ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 14; ]
 class projApp extends Application.AppBase{
-    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 14; ]
+    [ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 14; ]
     <init> {
     }
-    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 14; ]
+    [ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 14; ]
     static
     <init> {
     }
-    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 16; ]
+    [ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 16; ]
     function initialize() as Void {
-C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projApp_mc_16_26_start:
-[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc" 17 8 ]
+C_Users_dobre_mihai_Desktop_PHD_Garmin_long_covid_garmin_watch_app_source_projApp_mc_16_26_start:
+[ "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc" 17 8 ]
         %tmp.2 = getv ? :AppBase;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projApp_mc_16_26_stop:
+C_Users_dobre_mihai_Desktop_PHD_Garmin_long_covid_garmin_watch_app_source_projApp_mc_16_26_stop:
     }
-    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 22; ]
+    [ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 22; ]
     function onStart(state as Dictionary or Null) as Void {
     }
-    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 26; ]
+    [ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 26; ]
     function onStop(state as Dictionary or Null) as Void {
     }
-    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 30; ]
+    [ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 30; ]
     function getInitialView() as Array<Views or InputDelegates> or Null {
-C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projApp_mc_30_65_start:
-[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc" 31 8 ]
+C_Users_dobre_mihai_Desktop_PHD_Garmin_long_covid_garmin_watch_app_source_projApp_mc_30_65_start:
+[ "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc" 31 8 ]
         %tmp.1 = newa Array<Views or InputDelegates> 1;
         %tmp.5 = getv ? :projView;
         %tmp.2 = newc %tmp.5 ();
         %tmp.6 = dup %tmp.1;
         %tmp.7 = aputv %tmp.6 0 %tmp.2;
         ret %tmp.7;
-C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projApp_mc_30_65_stop:
+C_Users_dobre_mihai_Desktop_PHD_Garmin_long_covid_garmin_watch_app_source_projApp_mc_30_65_stop:
     }
-    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 34; ]
+    [ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 34; ]
     function onPhone(msg) as Void {
-C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projApp_mc_34_35_start:
-[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc" 47 8 ]
+C_Users_dobre_mihai_Desktop_PHD_Garmin_long_covid_garmin_watch_app_source_projApp_mc_34_35_start:
+[ "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc" 47 8 ]
         %tmp.1 = getm $.Toybox.WatchUi;
         %tmp.2 = getv function %tmp.1 :requestUpdate;
         invoke %tmp.1 %tmp.2();
-C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projApp_mc_34_35_stop:
+C_Users_dobre_mihai_Desktop_PHD_Garmin_long_covid_garmin_watch_app_source_projApp_mc_34_35_stop:
     }
-    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 50; ]
+    [ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 50; ]
     function timerCallback() as Void {
-C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projApp_mc_50_37_start:
-[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc" 52 8 ]
+C_Users_dobre_mihai_Desktop_PHD_Garmin_long_covid_garmin_watch_app_source_projApp_mc_50_37_start:
+[ "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc" 52 8 ]
         %tmp.1 = getm $.Toybox.Sensor;
         %tmp.2 = getv function %tmp.1 :getInfo;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         putv self :info %tmp.3;
-C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projApp_mc_50_37_stop:
+C_Users_dobre_mihai_Desktop_PHD_Garmin_long_covid_garmin_watch_app_source_projApp_mc_50_37_stop:
     }
 }
-[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 71; ]
+[ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 71; ]
 function getApp() as projApp {
-C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projApp_mc_71_29_start:
-[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc" 72 4 ]
+C_Users_dobre_mihai_Desktop_PHD_Garmin_long_covid_garmin_watch_app_source_projApp_mc_71_29_start:
+[ "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc" 72 4 ]
     %tmp.1 = getm $.Toybox.Application;
     %tmp.2 = getv function %tmp.1 :getApp;
     %tmp.3 = invoke %tmp.1 %tmp.2();
     %tmp.4 = as %tmp.3 projApp;
     ret %tmp.4;
-C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projApp_mc_71_29_stop:
+C_Users_dobre_mihai_Desktop_PHD_Garmin_long_covid_garmin_watch_app_source_projApp_mc_71_29_stop:
 }
-[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projApp.mc"; @line = 1; ]
+[ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projApp.mc"; @line = 1; ]
 <init> {
 }

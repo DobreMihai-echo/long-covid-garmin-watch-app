@@ -1,26 +1,26 @@
-[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projDelegate.mc"; @line = 1; ]
+[ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projDelegate.mc"; @line = 1; ]
 import Toybox.Lang;
-[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projDelegate.mc"; @line = 2; ]
+[ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projDelegate.mc"; @line = 2; ]
 import Toybox.WatchUi;
-[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projDelegate.mc"; @line = 4; ]
+[ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projDelegate.mc"; @line = 4; ]
 class projDelegate extends WatchUi.BehaviorDelegate{
-    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projDelegate.mc"; @line = 4; ]
+    [ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projDelegate.mc"; @line = 4; ]
     <init> {
     }
-    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projDelegate.mc"; @line = 4; ]
+    [ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projDelegate.mc"; @line = 4; ]
     static
     <init> {
     }
-    [ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projDelegate.mc"; @line = 6; ]
+    [ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projDelegate.mc"; @line = 6; ]
     function initialize() as Void {
-C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projDelegate_mc_6_26_start:
-[ "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projDelegate.mc" 7 8 ]
+C_Users_dobre_mihai_Desktop_PHD_Garmin_long_covid_garmin_watch_app_source_projDelegate_mc_6_26_start:
+[ "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projDelegate.mc" 7 8 ]
         %tmp.2 = getv ? :BehaviorDelegate;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-C_Users_Dobre_Mihai_Desktop_PHD_proj_source_projDelegate_mc_6_26_stop:
+C_Users_dobre_mihai_Desktop_PHD_Garmin_long_covid_garmin_watch_app_source_projDelegate_mc_6_26_stop:
     }
 }
-[ @file = "C:\Users\Dobre Mihai\Desktop\PHD\proj\source\projDelegate.mc"; @line = 1; ]
+[ @file = "C:\Users\dobre.mihai\Desktop\PHD\Garmin\long-covid-garmin-watch-app\source\projDelegate.mc"; @line = 1; ]
 <init> {
 }
